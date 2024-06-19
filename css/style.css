@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 80px;
+    background-color: black;
+}
+
+.header-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo a{
+    font-size: 2rem;
+}
+
+nav a{
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+nav a:hover{
+    color: brown;
+}
+
+.hamburger-button{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    header{
+        height: 50px;
+    }
+    .header-container{
+        padding-top: 10px;
+    }
+    .logo a{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .header-container{
+        padding-top: 10px;
+    }
+    .logo a{
+    font-size: 1.2rem;
+   }
+   nav{
+    display: none;
+   }
+  .hamburger-button{
+    display: block;
+    color: white;
+    font-size: 25px;
+  }
+
+}
