@@ -5,12 +5,12 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Pacifico', Arial, Helvetica, sans-serif;
 }
 
 header{
     height: 80px;
-    background-color: black;
+    background-color: #0D0D0D;
 }
 
 .header-container{
@@ -72,4 +72,108 @@ nav a:hover{
     font-size: 25px;
   }
 
+}
+
+/*--Background Image--*/
+.bg-image{
+    height: 700px;
+    background-image: url('/img/coffee.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-container{
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.737);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.text-wrapper{
+    width: 80%;
+}
+
+.text-wrapper h1{
+    font-family: "Pacifico";
+    color: #8C703B;
+    text-align: center;
+}
+
+.text-wrapper.tablet{
+    display: none;
+}
+
+
+.text-wrapper.mobile{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+    .bg-image{
+        height: 500px;
+        background-image: url('/img/coffee.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bg-container{
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.737);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .text-wrapper.desktop{
+        display: none;
+    }
+    .text-wrapper.mobile{
+        display: none;
+    }
+    .text-wrapper.tablet{
+        display: block;
+    }
+    .text-wrapper h2{
+        font-family: "Pacifico";
+        color: #8C703B;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .bg-image{
+        height: 500px;
+        background-image: url('/img/coffee.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .bg-container{
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.737);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .text-wrapper.desktop{
+        display: none;
+    }
+    .text-wrapper.tablet{
+        display: none;
+    }
+    .text-wrapper.mobile{
+        display: block;
+    }
+    .text-wrapper h3{
+        font-family: "Pacifico";
+        color: #8C703B;
+        text-align: center;
+    }
 }
