@@ -6,6 +6,7 @@
 
 body{
     font-family:'Pacifico', Arial, Helvetica, sans-serif;
+    color: #0D0D0D;
 }
 
 header{
@@ -37,7 +38,7 @@ nav a{
 }
 
 nav a:hover{
-    color: brown;
+    color: #8C703B;
 }
 
 .hamburger-button{
@@ -98,7 +99,6 @@ nav a:hover{
 }
 
 .text-wrapper h1{
-    font-family: "Pacifico";
     color: #8C703B;
     text-align: center;
 }
@@ -175,5 +175,101 @@ nav a:hover{
         font-family: "Pacifico";
         color: #8C703B;
         text-align: center;
+    }
+}
+
+/*--Products Section--*/
+.products{
+    margin: 80px auto;
+}
+
+.product-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-wrapper h2{
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.product-wrapper ul li{
+    list-style: none;
+}
+
+.product img{
+    width: 350px;   
+}
+
+.product figcaption{
+    text-align: center;
+    color: #8C703B;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .product img{
+        width: 250px;   
+    }
+    
+}
+
+/*--Employees Section*/
+.employees{
+    margin: 80px auto;
+}
+
+.employee-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.employee-wrapper h2{
+    text-align: center;
+}
+
+.employee-wrapper ul li{
+    list-style: none;
+}
+
+.employee{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.employee img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px 5px #8c703b4f;
+}
+
+.employee figcaption{
+    text-align: center;
+} 
+
+figcaption h3{
+    font-weight: bold;
+    color: #8C703B;
+}
+
+figcaption p{
+    color: #7c7474 ;
+}
+
+@media only screen and (max-width:768px){
+    .employee img{
+        width: 100px;
+        height: 100px;
     }
 }
