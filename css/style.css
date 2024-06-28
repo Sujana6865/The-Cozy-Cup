@@ -90,7 +90,7 @@ nav a:hover{
 
 .bg-container{
     height: 700px;
-    background-color: rgba(0, 0, 0, 0.737);
+    background-color: rgba(0, 0, 0, 0.577);
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -103,7 +103,7 @@ nav a:hover{
 }
 
 .text-wrapper h1{
-    color: #8C703B;
+    color: #a9720c;
     text-align: center;
 }
 
